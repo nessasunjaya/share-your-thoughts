@@ -1,0 +1,199 @@
+html{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../asset/Montserrat-Regular.otf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    src: url("../asset/Montserrat-Regular.otf");
+    background-color: #553E4E;
+}
+
+.header{
+    background-color: #EF78A3;
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #553E4E;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    height: 18vh;
+    margin-left: 50px;
+}
+
+.header > .profile{
+    margin-right: 50px;
+    display: flex;
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+.profile img{
+    height: 50px;
+    margin-right: 20px;
+}
+
+.headername{
+    font-weight: bolder;
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: larger;
+}
+
+.headeremail{
+    margin: 0;
+}
+
+footer{
+    background-color: #9EBC9E;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footmenu{
+    display: flex;
+    margin-top: 10px;
+}
+
+.branding{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brand{
+    font-size: 40px;
+    padding: 0;
+    margin-bottom: 2px;
+    color: #553E4E;
+}
+
+.brandtext{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: #553E4E;
+    opacity: 0.8;
+}
+
+.footermenu{
+    padding-left: 10px;
+    color: #553E4E;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+
+.footermenu:hover{
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.header-space{
+    margin-top: 18vh;
+}
+
+.profile-click{
+    display: none;
+    transition: 0.2s;
+}
+
+.logout{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 18vh;
+    right: 0;
+    position: fixed;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.274);
+}
+
+.logout button{
+    margin-bottom: 10px;
+}
+
+.logout .logoutbtn{
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    transition: 0.2s;
+}
+
+.logout .logoutbtn:hover{
+    transition: 0.2s;
+    background-color: rgb(163, 62, 44);
+    cursor: pointer;
+}
+
+.myPost{
+    color: #553E4E;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: large;
+    transition: 0.2s;
+}
+
+.myPost:hover{
+    transition: 0.2s;
+    background-color: #9EBC9E;
+    cursor: pointer;    
+}
+
+.customProfile{
+    color: #553E4E;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: large;
+    transition: 0.2s;
+}
+
+.customProfile:hover{
+    transition: 0.2s;
+    color: #553E4E;
+    background-color: #9EBC9E;
+    cursor: pointer;
+}
+
+.centered-and-cropped { 
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}

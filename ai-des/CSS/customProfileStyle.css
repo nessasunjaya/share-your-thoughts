@@ -1,0 +1,102 @@
+.change{
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-bottom: 40px;
+}
+
+.change div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.change .update-form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+form input{
+    height: 35px;
+    padding-left: 30px;
+    width: 450px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.error-message{
+    color: rgb(255, 78, 78);
+    font-weight: bold;
+}
+
+.success-message{
+    color: rgb(73, 216, 108);
+    font-weight: bold;    
+}
+
+.badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.choose{
+    display:none;
+  }
+
+input:focus{
+    background-color: #FFCFD2;
+}
+
+input[type="file"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    border-radius: 0;
+}
+  
+input[type="submit"]{
+    background-color: #ffa8c8;
+    width: 450px;
+    height: 35px;
+    padding-left: 30px;
+}
+
+input[type="submit"]:hover{
+    background-color: #EF78A3;
+    cursor: pointer;
+}
+
+  /* HIDE RADIO */
+input[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+input[type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+input[type=radio]:checked + img {
+    outline: 2px solid #fff;
+  }
+  
+.badge img
+  {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+label{
+    margin: 10px;
+  }

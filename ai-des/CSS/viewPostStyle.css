@@ -1,0 +1,244 @@
+.createPost{
+    position:fixed;
+	width:80px;
+	height:80px;
+	bottom:60px;
+	right:60px;
+	background-color:#EF78A3;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px rgb(68, 64, 64);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createPost p{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    margin: 50px;
+    width: 75%;
+    border-radius: 20px;
+    background-color: #FFCFD2;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50vh;
+}
+.post .profile{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.post .profile .headername{
+    font-weight: bolder;
+    margin: 0;
+    font-size: larger;
+}
+
+.post .profile .headeremail{
+    margin: 0;
+    font-size: medium;
+}
+
+.message{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 35vh;
+}
+
+.message p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: large;
+}
+
+.message{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 35vh;
+}
+
+.message p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: large;
+}
+
+.status{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.status img{
+    height: 40px;
+}
+
+#prev, #next{
+    /* position:fixed; */
+	width: 5vw;
+	height: 4.5vw;
+	background-color:#EF78A3;
+	color:#FFF;
+	border-radius: 50%;
+	text-align: center;
+	box-shadow: 2px 2px 3px rgb(68, 47, 47);
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#prev:hover, #next:hover{
+    transition: 0.2s;
+    color: #553E4E;
+    background-color: #9EBC9E;
+    cursor: pointer;
+}
+
+span{
+    font-size: 3vw;
+    margin: 0;
+}
+
+.slider{
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-list{
+    display: none;
+}
+
+.image{
+    display: none;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+}
+
+.separator-text{
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+    text-transform: uppercase;
+    z-index: 0;
+}
+
+.separator-text::before{
+    content: "";
+    width: 20%;
+    height: 2px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    margin-top: 20px;
+    left: 18%;
+    border-radius: 2px;
+}
+
+.separator-text::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    margin-top: -20px;
+    right: 18%;
+    border-radius: 2px;
+}
+
+/* recommendation */
+.recommend-content{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.recommend{
+    width: 29%;
+    border-radius: 20px;
+    background-color: #FFCFD2;
+    margin: 10px;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.recommend .profile{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.recommend .profile .headername{
+    font-weight: bolder;
+    margin: 0;
+    font-size: medium;
+}
+
+.recommend .profile .headeremail{
+    margin: 0;
+    font-size: small;
+}
+
+.recommend .message{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 110px;
+}
+
+.recommend .message p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: small;
+}
+
+.recommend .status{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.recommend .status img{
+    height: 30px;
+}

@@ -1,0 +1,28 @@
+.post-info{
+    padding-bottom: 20px;
+    margin-left: 2vw;
+}
+
+.post-info p{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.post-info .info{
+    font-size: 15px;
+    color: white;
+}
+
+.myProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
+.myProfile img{
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+}

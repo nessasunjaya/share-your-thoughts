@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../asset/Montserrat-Regular.otf");
+}
+
+body{
+  margin: 0;
+  background-color: #553E4E;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.login-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.login-card{
+  background-color: #9EBC9E;
+  width: 30%;
+  height: 75vh;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Montserrat;
+  box-shadow: 2px 4px 10px black
+}
+
+.login-card>a{
+  color: white;
+  font-weight: 300;
+  text-align: right;
+  display: flex;
+  align-self: flex-end;
+  text-decoration: none;
+}
+
+.login-card>button{
+  border: none;
+  background-color: transparent;
+  height: 75px;
+  width: 300px;
+  font-size: 45px;
+  font-weight: bolder;
+  color: black;
+  opacity: 35%;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  transition: 0.2s; 
+  color: #553E4E;
+  opacity: 100% !important;
+}
+
+#goto-regis{
+  background-color: #553E4E;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  align-self: flex-end;
+  border-radius: 40px 0 0 40px;
+  padding-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#txt1{
+  color:#9EBC9E;
+}
+
+#txt2{
+  color: white;
+}
+
+input[type=text]{
+  margin-top: 50px;
+}
+
+input{
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: #E4E4E4;
+  padding-left: 30px;
+  font-size: x-large;
+}
+
+input:focus{
+  outline: none;
+  transition: 0.2s;
+  background-color: #553E4E;
+  color: #E4E4E4;
+}
+
+.error-message{
+  padding-bottom: 0;
+  color: rgb(158, 25, 25);
+  text-align: center;
+  font-weight: bold;
+}

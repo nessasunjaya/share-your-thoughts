@@ -1,0 +1,428 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../asset/Montserrat-Regular.otf");
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+body{
+  margin: auto;
+  background-color: #9EBC9E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Montserrat;
+  src: url("../asset/Montserrat-Regular.otf");
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.content h1{
+  font-weight: bolder;
+  color: #553E4E;
+  text-shadow: 0 0 20px #fff;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+/* NAVBAR */
+.banner{
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(red_velvet_wendy_like_water_teaser_9.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../asset/background2.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Montserrat;
+  src: url("../asset/Montserrat-Regular.otf");
+  margin-bottom: 50px;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100000;
+}
+
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #EF78A3;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  width: 100%;
+  /* position: absolute; */
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: -10;
+}
+
+.content h1{
+  margin-top: 150px;
+}
+
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  color: #fff;
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #9EBC9E;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background: #9EBC9E;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border:none;
+}
+
+
+.benefit{
+  color: #553E4E;
+  font-family: Montserrat;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+.subscribe{
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.subscribe-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-color: #553E4E;
+  flex-direction: column;
+  border-radius: 10%;
+  padding: 25px;
+  margin: 5px;
+  transition: 0.5s;
+}
+
+.subscribe-card:hover{
+  width: 305px;
+  height: 305px;
+  transition: 0.5s;
+}
+
+.subscribe-card img{
+  width: 150px;
+  border-radius: 20px;
+}
+
+.subscribe-card .title{
+  font-size: x-large;
+  font-weight: bold;
+  color: #EF78A3;
+}
+
+.subscribe-card .sub-title{
+  font-weight: 800;
+  color: #E4E4E4;
+}
+
+.our-team{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.members{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: #E4E4E4;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.members p{
+  margin: 5px;
+}
+
+.members .title{
+  font-size: large;
+  font-weight: bold;
+}
+
+.members .sub-title{
+  font-size: medium;
+}
+
+.members img{
+  border-radius: 50%;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container{
+  display: flex;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../asset/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+}
+
+.form-container div{
+  width: 50%;
+}
+
+form p{
+  color: white;
+}
+
+form{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+form h1{
+  color: #ffdce9;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+input{
+  width: 500px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  margin: 5px;
+}
+
+input:focus{
+  outline: solid 2px #fff;
+  color: #553E4E;
+  background-color: #9EBC9E;
+}
+
+.submit{
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  color: #553E4E;
+  background-color: #eb94b4;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.submit:hover{
+  cursor: pointer;
+  background-color: #EF78A3;
+}
+
+.error-message{
+  padding-bottom: 0;
+  color: rgb(158, 25, 25);
+  text-align: center;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #EF78A3;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footmenu{
+  display: flex;
+  margin-top: 10px;
+}
+
+.branding{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brand{
+  font-size: 40px;
+  padding: 0;
+  margin-bottom: 2px;
+  color: #553E4E;
+}
+
+.brandtext{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  color: #553E4E;
+  opacity: 0.8;
+}
+
+.footermenu{
+  padding-left: 10px;
+  color: #553E4E;
+  padding-right: 10px;
+  transition: 0.2s;
+}
+
+.footermenu:hover{
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.copyright{
+  font-size: 14px;
+  color: aliceblue;
+}
+
+
+.badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+}
+
+.choose{
+  display:none;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #fff;
+}
+
+form img
+{
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+label{
+  margin: 10px;
+}
+
+form .subscribed{
+  color: #ffdce9;
+}
